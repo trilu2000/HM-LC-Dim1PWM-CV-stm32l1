@@ -1,0 +1,17 @@
+/arduino/
+/Libraries/
+/Release/
+/spec.d
+/.ino.cpp
+/.settings/
+**/.pio
+**/.vscode
+.idea
+.DS_Store
+*.sln
+*.vcxproj
+/__vm/
+/.vs/
+*.filters
+*.user
+
