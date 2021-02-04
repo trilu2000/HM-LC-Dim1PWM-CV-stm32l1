@@ -134,6 +134,7 @@ void setup () {
     sdev.channel(3).peer(cfgBtn.peer());
   }
 
+  LowPower.begin();
   tempsensor.init();
   sdev.initDone();
   sdev.led().invert(true);
@@ -144,7 +145,7 @@ void loop() {
   bool worked = hal.runready();
   bool poll = sdev.pollRadio();
   if( worked == false && poll == false ) {
-    //hal.activity.savePower<Idle<true> >(hal);
+    hal.activity.savePower<Idle<true> >(hal);
   }
 
 
